@@ -1,0 +1,182 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="x5-orientation" content="portrait ||andscape"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <title></title>
+</head>
+<body>
+<div class="daohang" style="height: 20px; line-height: 20px;">
+<div class="zhongjian"  style="height: 20px; line-height: 20px;"><a href="#"><div id="login_out">OUT</div></a><div id="welcome">Welcome: wuwei@163.com</div></div>
+</div>
+   <div class="daohang">
+<div class="zhongjian">
+    <div id="log">Logo</div>
+<div id="sjanniu">
+  <img src="images/dakai.gif" id="dakai" onclick="sjopen()">
+</div>
+
+<div class="anniu">
+ Home 
+      <ul style="display:none;">
+         <li>Amazon</li>
+         <li>Product</li>
+         <li>car</li>
+         <li>truck</li>
+         <li>moto</li>        
+     </ul>
+    
+  
+</div>
+ <div class="xian">|</div><div class="anniu">
+ Home 
+      <ul style="display:none;">
+         <li>Amazon</li>
+         <li>Product</li>
+         <li>car</li>
+         <li>truck</li>
+         <li>moto</li>        
+     </ul>
+    
+  
+</div>
+ <div class="xian">|</div><div class="anniu">
+ Home 
+      <ul style="display:none;">
+         <li>Amazon</li>
+         <li>Product</li>
+         <li>car</li>
+         <li>truck</li>
+         <li>moto</li>        
+     </ul>
+    
+  
+</div>
+ <div class="xian">|</div><div class="anniu">
+ Home 
+      <ul style="display:none;">
+         <li>Amazon</li>
+         <li>Product</li>
+         <li>car</li>
+         <li>truck</li>
+         <li>moto</li>        
+     </ul>
+    
+  
+</div>
+ <div class="xian">|</div><div class="anniu">
+ Home 
+      <ul style="display:none;">
+         <li>Amazon</li>
+         <li>Product</li>
+         <li>car</li>
+         <li>truck</li>
+         <li>moto</li>        
+     </ul>
+    
+  
+</div>
+ <div class="xian">|</div><div class="anniu">
+ Home 
+      <ul style="display:none;">
+         <li>Amazon</li>
+         <li>Product</li>
+         <li>car</li>
+         <li>truck</li>
+         <li>moto</li>        
+     </ul>
+    
+  
+</div>
+ <div class="xian">|</div><div class="anniu">
+ Home 
+      <ul style="display:none;">
+         <li>Amazon</li>
+         <li>Product</li>
+         <li>car</li>
+         <li>truck</li>
+         <li>moto</li>        
+     </ul>
+    
+  
+</div>
+ <div class="xian">|</div>
+
+ 
+
+
+ <div  style="clear:both;"></div>
+
+
+
+
+
+</div>
+
+    </div>
+ <div style="clear:both"></div>
+
+
+
+<div id="content"> 00000000000000000000000</div>
+ 
+
+<div id="bottom">
+    <div class="zhongjian" style="">Copyright KingBolen Rights Reserved.</div>
+    
+</div>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+
+    jQuery(document).ready(function($) {
+        $(".anniu").hover(function() {   //利用hover鼠标停留上面的时候,产生后续动作
+            console.log("in");
+            
+            $("ul",this).slideDown("200");
+            $(this).children('ul:first').addClass("hov");
+
+        }, function() {                  //利用鼠标离开之后,产生后续的动作
+            console.log("out");            
+            $("ul",this).slideUp("100");
+            $(this).children('ul:first').addClass("hov");
+        });
+     
+ 
+ //退出系统
+
+
+$("#login_out").click(function(event) {
+   $.post('cookie_delete.php', {param1: 'value1'}, function(data, textStatus, xhr) {
+       window.location="index.php";
+   });
+});
+
+
+
+                                       });
+
+ //控制关闭手机端的下拉菜单
+    function sjclose(argument) {
+         $("#sjanniu").html('<img src="images/dakai.gif" id="dakai" onclick="sjopen()"  >') 
+       console.log("Open")
+         $(".anniu").slideUp("200");  
+    
+    }
+
+ //控制打开手机端的下拉菜单
+        function sjopen(argument) {
+         $("#sjanniu").html('<img src="images/cha.gif" id="cha"  onclick="sjclose()" >') 
+       console.log("Close")
+        $(".anniu").slideDown("100");  
+    
+    }
+        
+ 
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    font-size: 12pt;
+}
+body,ul,li{ margin:0px; padding: 0px; }
+.daohang{ width: 100%; height: 45px;border-bottom: 1px solid #cccccc; margin:auto;  text-align: center; line-height: 45px; background-color: #ececec;}
+.zhongjian { width: 1000px; height: 45px; line-height: 45px; margin: auto; text-align: left;   }
+#log { width: auto; height: auto; float: left; border:0px solid red; }
+.anniu { width: 45pt; height: auto; margin: auto auto auto 10px;  line-height: 45px; float: left; text-align: center;  position: relative; }
+.xian { padding: 0px;  margin: 0px 0px 0px 0px; float: left; }
+.anniu ul { border:none; margin-top: -1px; width: 210px;  z-index: 1000;  position: absolute; }
+.anniu ul li { width: auto; height: 35px; border: 1px solid #cccccc; list-style: none; background-color: #ffffff;  line-height: 35px; margin-bottom: 1px; text-align: left; padding: 2px;} 
+.hov { display: block; }
+#sjanniu { display: none; } /*控制手机导航显示*/
+.regedit { width: 40%;  height: auto; padding: 15px; border: 1px solid #cccccc; border-radius: 10px; margin: 10% auto;   }
+.regedit img { width: 25%; height: auto; }
+.pass_err { color: red; display: none; }
+.email_err{display: none;  }
+
+#login_out { float: right; color: red; font-size: 10pt; margin-right: 5px; }
+#welcome { float: right; margin-left: 5px; font-size: 10pt }
+#content {width: 1000px; height: 150px; margin: auto; margin-top: 20px;  }
+
+/*底部版权声明*/
+#bottom { width: 100%; height:45px; line-height: 45px; margin: auto; border-top: 1px solid #cccccc;background-color: #ececec; position: fixed; bottom: 0px;}
+@media screen and (max-width: 600px)
+{
+.daohang{ width: 100%; height:auto; border-bottom: 1px solid #cccccc;  margin:auto;  text-align: center; line-height: 45px; background-color: #ececec;}
+.zhongjian { width: 100%; height: auto; line-height: 45px; margin:auto; text-align: left; background-color: #ececec; position: absolute;   }
+#sjanniu { width: 45px; height:auto; float: right;   text-align: center; line-height: 45px; display: block; position: relative; top: 8pt;  }
+#cha{    position: absolute;
+    top:5px;
+    left:5px; 
+ }
+#dakai{    position: absolute;
+    top:5px;
+    left:5px; 
+ } 
+
+.anniu { width: 100%; height: auto; margin: 0;  line-height: auto; border-bottom: 0px solid #cccccc;border-top: 1px solid #cccccc; text-align: left; 
+          display: none;}
+.anniu ul { border:none; margin-top: -1px; width:100%; position: static; }
+.anniu ul li { width: auto; height: 35px; border: none; border-bottom: 1px dashed #cccccc; background-color: #ffffff; list-style: none;  line-height: 35px; margin-bottom: 1px; text-align: left; padding: 2px;} 
+.xian { display: none; }
+
+.regedit { width: 95%;  height: auto; padding: 15px; border: 1px solid #cccccc; border-radius: 10px; margin-top: 2%;  }
+.regedit img { width: 45%; height: auto;}
+#content {width: 100%; height: 150px; margin: auto; margin-top:65px;  }
+
+
+
+}
+
